@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="88" started-at="2018-12-19T20:19:31Z" finished-at="2018-12-19T20:19:31Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="88" started-at="2018-12-19T20:19:31Z" finished-at="2018-12-19T20:19:31Z">
+      <class name="com.kvalit18.example.Calculator_FilippaL.CalculatorBasicTest">
+        <test-method status="PASS" signature="methodSubTest()[pri:0, instance:methodSubTest(com.kvalit18.example.Calculator_FilippaL.CalculatorBasicTest)]" name="methodSubTest" duration-ms="0" started-at="2018-12-19T21:19:31Z" finished-at="2018-12-19T21:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSubTest -->
+        <test-method status="PASS" signature="methodMultiTest()[pri:0, instance:methodMultiTest(com.kvalit18.example.Calculator_FilippaL.CalculatorBasicTest)]" name="methodMultiTest" duration-ms="0" started-at="2018-12-19T21:19:31Z" finished-at="2018-12-19T21:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodMultiTest -->
+        <test-method status="PASS" signature="methodDiviTest()[pri:0, instance:methodDiviTest(com.kvalit18.example.Calculator_FilippaL.CalculatorBasicTest)]" name="methodDiviTest" duration-ms="0" started-at="2018-12-19T21:19:31Z" finished-at="2018-12-19T21:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodDiviTest -->
+        <test-method status="PASS" signature="methodAddTest()[pri:0, instance:methodAddTest(com.kvalit18.example.Calculator_FilippaL.CalculatorBasicTest)]" name="methodAddTest" duration-ms="0" started-at="2018-12-19T21:19:31Z" finished-at="2018-12-19T21:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodAddTest -->
+      </class> <!-- com.kvalit18.example.Calculator_FilippaL.CalculatorBasicTest -->
+      <class name="com.kvalit18.example.Calculator_FilippaL.CalculatorAdvancedTest">
+        <test-method status="PASS" signature="methodReturnsSmallestTest()[pri:0, instance:methodReturnsSmallestTest(com.kvalit18.example.Calculator_FilippaL.CalculatorAdvancedTest)]" name="methodReturnsSmallestTest" duration-ms="6" started-at="2018-12-19T21:19:31Z" finished-at="2018-12-19T21:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodReturnsSmallestTest -->
+        <test-method status="PASS" signature="methodReturnsGreatestTest()[pri:0, instance:methodReturnsGreatestTest(com.kvalit18.example.Calculator_FilippaL.CalculatorAdvancedTest)]" name="methodReturnsGreatestTest" duration-ms="1" started-at="2018-12-19T21:19:31Z" finished-at="2018-12-19T21:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodReturnsGreatestTest -->
+        <test-method status="PASS" signature="methodSqrtTest()[pri:0, instance:methodSqrtTest(com.kvalit18.example.Calculator_FilippaL.CalculatorAdvancedTest)]" name="methodSqrtTest" duration-ms="0" started-at="2018-12-19T21:19:31Z" finished-at="2018-12-19T21:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSqrtTest -->
+        <test-method status="PASS" signature="methodAbsolueValueTest()[pri:0, instance:methodAbsolueValueTest(com.kvalit18.example.Calculator_FilippaL.CalculatorAdvancedTest)]" name="methodAbsolueValueTest" duration-ms="2" started-at="2018-12-19T21:19:31Z" finished-at="2018-12-19T21:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodAbsolueValueTest -->
+        <test-method status="PASS" signature="methodTimesTwoTest()[pri:0, instance:methodTimesTwoTest(com.kvalit18.example.Calculator_FilippaL.CalculatorAdvancedTest)]" name="methodTimesTwoTest" duration-ms="0" started-at="2018-12-19T21:19:31Z" finished-at="2018-12-19T21:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodTimesTwoTest -->
+        <test-method status="PASS" signature="methodModuloTest()[pri:0, instance:methodModuloTest(com.kvalit18.example.Calculator_FilippaL.CalculatorAdvancedTest)]" name="methodModuloTest" duration-ms="0" started-at="2018-12-19T21:19:31Z" finished-at="2018-12-19T21:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodModuloTest -->
+      </class> <!-- com.kvalit18.example.Calculator_FilippaL.CalculatorAdvancedTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

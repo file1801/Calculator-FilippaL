@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CalculatorAdvancedOperations.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Calculator-FilippaL</a> &gt; <a href="index.source.html" class="el_package">com.kvalit18.example.Calculator_FilippaL</a> &gt; <span class="el_source">CalculatorAdvancedOperations.java</span></div><h1>CalculatorAdvancedOperations.java</h1><pre class="source lang-java linenums">package com.kvalit18.example.Calculator_FilippaL;
+
+<span class="fc" id="L3">public class CalculatorAdvancedOperations implements CalculatorAdvancedOperationsInterface {</span>
+	
+	
+	public double methodReturnsGreatest(double number1, double number2)
+	{
+<span class="fc" id="L8">		double returnNumber = Math.max(number1, number2);</span>
+<span class="fc" id="L9">		return returnNumber;</span>
+	}
+	
+	public double methodReturnsSmallest(double number1, double number2)
+	{
+<span class="fc" id="L14">		double returnNumber = Math.min(number1, number2);</span>
+<span class="fc" id="L15">		return returnNumber;</span>
+	}
+	
+	public double methodModulo(double number1, double number2)
+	{
+<span class="fc" id="L20">		double returnNumber = number1 % number2;</span>
+<span class="fc" id="L21">		return returnNumber;</span>
+	}
+	
+	public double methodAbsoluteValue(double number1)
+	{
+<span class="fc" id="L26">		double returnNumber = Math.abs(number1);</span>
+<span class="fc" id="L27">		return returnNumber;</span>
+	}
+
+	public double methodSqrt(double number1)
+	{
+<span class="fc" id="L32">		double returnNumber = Math.sqrt(number1);</span>
+<span class="fc" id="L33">		return returnNumber;</span>
+	}
+	
+	public double methodTimesTwo(double number1)
+	{
+<span class="fc" id="L38">		double returnNumberTimesTwo = number1 * number1;</span>
+<span class="fc" id="L39">		return returnNumberTimesTwo;</span>
+	}
+
+	
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

@@ -13,24 +13,100 @@ public class CalculatorAdvancedTest {
 	double randomNumberTwo = 0.0;
 
 	@Test
-	public void methodReturnsGreatest()
+	public void methodReturnsGreatestTest()
 	{	
 		oracle = Math.max(randomNumberOne, randomNumberTwo);
 		assertEquals(c.methodReturnsGreatest(randomNumberOne, randomNumberTwo),oracle,0);
-		System.out.println("Testing add method with: " + randomNumberOne + " and " +
-		randomNumberTwo + " = " + oracle);
 
-		for(int i = 0; i < 5; i++)
+		for(int i = 0; i < 50; i++)
 		{
 		randomNumberOne = -10 + random.nextDouble() * 20;
 		randomNumberTwo = -10 + random.nextDouble() * 20;
 		
 		oracle = Math.max(randomNumberOne, randomNumberTwo);
 		assertEquals(c.methodReturnsGreatest(randomNumberOne, randomNumberTwo),oracle,0);
-		System.out.println("Testing add method with: " + randomNumberOne + " and " +
-		randomNumberTwo + " = " + oracle);
 		}
 	}
+	
+	@Test
+	public void methodReturnsSmallestTest()
+	{	
+		oracle = Math.min(randomNumberOne, randomNumberTwo);
+		assertEquals(c.methodReturnsSmallest(randomNumberOne, randomNumberTwo),oracle,0);
+
+		for(int i = 0; i < 50; i++)
+		{
+		randomNumberOne = -10 + random.nextDouble() * 20;
+		randomNumberTwo = -10 + random.nextDouble() * 20;
 		
+		oracle = Math.min(randomNumberOne, randomNumberTwo);
+		assertEquals(c.methodReturnsSmallest(randomNumberOne, randomNumberTwo),oracle,0);
+		}
+	}
+	
+	@Test
+	public void methodModuloTest()
+	{	
+		oracle = randomNumberOne % randomNumberTwo;
+		assertEquals(c.methodModulo(randomNumberOne, randomNumberTwo),oracle,0);
+
+		for(int i = 0; i < 50; i++)
+		{
+		randomNumberOne = -10 + random.nextDouble() * 20;
+		randomNumberTwo = -10 + random.nextDouble() * 20;
+		
+		oracle = randomNumberOne % randomNumberTwo;
+		assertEquals(c.methodModulo(randomNumberOne, randomNumberTwo),oracle,0);
+		}
+	}
+	
+	@Test
+	public void methodAbsolueValueTest()
+	{	
+		oracle = Math.abs(randomNumberOne);
+		assertEquals(c.methodAbsoluteValue(randomNumberOne),oracle,0);
+
+		for(int i = 0; i < 50; i++)
+		{
+		randomNumberOne = -10 + random.nextDouble() * 20;
+		randomNumberTwo = -10 + random.nextDouble() * 20;
+		
+		oracle = Math.abs(randomNumberOne);
+		assertEquals(c.methodAbsoluteValue(randomNumberOne),oracle,0);
+		}
+	}
+	
+	@Test
+	public void methodSqrtTest()
+	{	
+		oracle = Math.sqrt(randomNumberOne);
+		assertEquals(c.methodSqrt(randomNumberOne),oracle,0);
+
+		for(int i = 0; i < 50; i++)
+		{
+		randomNumberOne = -10 + random.nextDouble() * 20;
+		randomNumberTwo = -10 + random.nextDouble() * 20;
+		
+		oracle = Math.sqrt(randomNumberOne);
+		assertEquals(c.methodSqrt(randomNumberOne),oracle,0);
+		}
+	}
+	
+	@Test
+	public void methodTimesTwoTest()
+	{	
+		oracle = randomNumberOne * randomNumberOne;
+		assertEquals(c.methodTimesTwo(randomNumberOne),oracle,0);
+
+		for(int i = 0; i < 50; i++)
+		{
+		randomNumberOne = -10 + random.nextDouble() * 20;
+		randomNumberTwo = -10 + random.nextDouble() * 20;
+		
+		oracle = randomNumberOne * randomNumberOne;
+		assertEquals(c.methodTimesTwo(randomNumberOne),oracle,0);
+		}
+	}
+	
 	}
 

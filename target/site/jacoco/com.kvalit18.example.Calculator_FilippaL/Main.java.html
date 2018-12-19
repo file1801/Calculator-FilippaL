@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Calculator-FilippaL</a> &gt; <a href="index.source.html" class="el_package">com.kvalit18.example.Calculator_FilippaL</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package com.kvalit18.example.Calculator_FilippaL;
+import java.util.Scanner;
+
+
+<span class="nc" id="L5">public class Main {</span>
+
+	public static void main(String[] args) {
+		
+<span class="nc" id="L9">		CalculatorBasicOperations objectB = new CalculatorBasicOperations();</span>
+<span class="nc" id="L10">		CalculatorAdvancedOperations objectA = new CalculatorAdvancedOperations();</span>
+		
+<span class="nc" id="L12">		Scanner sc = new Scanner(System.in);</span>
+<span class="nc" id="L13">		boolean korProgrammet = true;</span>
+		
+<span class="nc bnc" id="L15" title="All 2 branches missed.">		while(korProgrammet)		</span>
+		{
+		
+<span class="nc" id="L18">		System.out.print(&quot;Välkommen till miniräknaren. Vilket räknesätt vill du använda?&quot;</span>
+				+ &quot;\nAddera [1]\nSubtrahera [2]\nMultiplicera [3]\nDividera [4]\n&quot;
+				+ &quot;Visa det största av två värden [5]\nVisa det minsta av två värden [6]\n&quot;
+				+ &quot;Modulo [7]\nVisa Absolutvärdet [8]\nKvadratrot [9]\n&quot;
+				+ &quot;Upphöjt till två [10]\nAvsluta programmet [11]\n\nVälj en av siffrorna: &quot;);
+		
+<span class="nc" id="L24">		int val = sc.nextInt();</span>
+		
+<span class="nc" id="L26">		double tal1 = 0;</span>
+<span class="nc" id="L27">		double tal2 = 0;</span>
+		
+<span class="nc bnc" id="L29" title="All 14 branches missed.">		if(val == 1 || val == 2 || val == 3 || val == 4 || val == 5 || val == 6 || val == 7)</span>
+		{
+
+<span class="nc" id="L32">		System.out.print(&quot;Skriv in första talet: &quot;);</span>
+<span class="nc" id="L33">		tal1 = sc.nextDouble();		</span>
+<span class="nc" id="L34">		System.out.print(&quot;Skriv in andra talet: &quot;);</span>
+<span class="nc" id="L35">		tal2 = sc.nextDouble();</span>
+		
+		}
+<span class="nc bnc" id="L38" title="All 6 branches missed.">		else if(val ==8 || val == 9 || val == 10)</span>
+		{
+<span class="nc" id="L40">			System.out.print(&quot;Skriv in talet: &quot;);</span>
+<span class="nc" id="L41">			tal1 = sc.nextDouble();</span>
+		}
+		
+<span class="nc bnc" id="L44" title="All 12 branches missed.">		switch(val)</span>
+		{
+		
+		case 1:
+<span class="nc" id="L48">			double returnNumberAdd = objectB.methodAdd(tal1, tal2);</span>
+<span class="nc" id="L49">			System.out.println(&quot;Svar: &quot; + returnNumberAdd);</span>
+<span class="nc" id="L50">			break;</span>
+			
+		case 2:
+<span class="nc" id="L53">			double returnNumberSub = objectB.methodSub(tal1, tal2);</span>
+<span class="nc" id="L54">			System.out.println(&quot;Svar: &quot; + returnNumberSub);</span>
+<span class="nc" id="L55">			break;</span>
+			
+		case 3:
+<span class="nc" id="L58">			double returnNumberMulti = objectB.methodMulti(tal1, tal2);</span>
+<span class="nc" id="L59">			System.out.println(&quot;Svar: &quot; + returnNumberMulti);</span>
+<span class="nc" id="L60">			break;</span>
+			
+		case 4:
+<span class="nc" id="L63">			double returnNumberDivi = objectB.methodDivi(tal1, tal2);</span>
+<span class="nc" id="L64">			System.out.println(&quot;Svar: &quot; + returnNumberDivi);</span>
+<span class="nc" id="L65">			break;</span>
+			
+		case 5:
+<span class="nc" id="L68">			double returnNumberGreatest = objectA.methodReturnsGreatest(tal1, tal2);</span>
+<span class="nc" id="L69">			System.out.println(&quot;Svar: &quot; + returnNumberGreatest);</span>
+<span class="nc" id="L70">			break;</span>
+			
+		case 6:
+<span class="nc" id="L73">			double returnNumberSmallest = objectA.methodReturnsSmallest(tal1, tal2);</span>
+<span class="nc" id="L74">			System.out.println(&quot;Svar: &quot; + returnNumberSmallest);</span>
+<span class="nc" id="L75">			break;</span>
+			
+		case 7:
+<span class="nc" id="L78">			double returnNumberModulo = objectA.methodModulo(tal1, tal2);</span>
+<span class="nc" id="L79">			System.out.println(&quot;Svar: &quot; + returnNumberModulo);</span>
+<span class="nc" id="L80">			break;</span>
+			
+		case 8:
+<span class="nc" id="L83">			double returnNumberAbsolute = objectA.methodAbsoluteValue(tal1);</span>
+<span class="nc" id="L84">			System.out.println(&quot;Svar: &quot; + returnNumberAbsolute);</span>
+<span class="nc" id="L85">			break;</span>
+			
+		case 9:
+<span class="nc" id="L88">			double returnNumberSqrt = objectA.methodSqrt(tal1);</span>
+<span class="nc" id="L89">			System.out.println(&quot;Svar: &quot; + returnNumberSqrt);</span>
+<span class="nc" id="L90">			break;</span>
+			
+		case 10:
+<span class="nc" id="L93">			double returnNumberTimesTwo = objectA.methodTimesTwo(tal1);</span>
+<span class="nc" id="L94">			System.out.println(&quot;Svar: &quot; + returnNumberTimesTwo);</span>
+<span class="nc" id="L95">			break;</span>
+			
+		case 11:
+<span class="nc" id="L98">			System.out.println(&quot;--------&quot;);</span>
+<span class="nc" id="L99">			System.out.println(&quot;Hejdå&quot;);</span>
+<span class="nc" id="L100">			korProgrammet = false;</span>
+<span class="nc" id="L101">			sc.close();		</span>
+		}
+			
+<span class="nc" id="L104">		}</span>
+		
+<span class="nc" id="L106">		sc.close();	</span>
+<span class="nc" id="L107">	}	</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
