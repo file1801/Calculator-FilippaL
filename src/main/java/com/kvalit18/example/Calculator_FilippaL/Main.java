@@ -19,7 +19,7 @@ public class Main {
 				+ "\nAddera [1]\nSubtrahera [2]\nMultiplicera [3]\nDividera [4]\n"
 				+ "Visa det största av två värden [5]\nVisa det minsta av två värden [6]\n"
 				+ "Modulo [7]\nVisa Absolutvärdet [8]\nKvadratrot [9]\n"
-				+ "Upphöjt till två [10]\nVälj en av siffrorna: ");
+				+ "Upphöjt till två [10]\nAvsluta programmet [11]\n\nVälj en av siffrorna: ");
 		
 		int val = sc.nextInt();
 		
@@ -46,53 +46,59 @@ public class Main {
 		
 		case 1:
 			double returnNumberAdd = objectB.methodAdd(tal1, tal2);
-			System.out.println(returnNumberAdd);
+			System.out.println("Svar: " + returnNumberAdd);
 			break;
 			
 		case 2:
 			double returnNumberSub = objectB.methodSub(tal1, tal2);
-			System.out.println(returnNumberSub);
+			System.out.println("Svar: " + returnNumberSub);
 			break;
 			
 		case 3:
 			double returnNumberMulti = objectB.methodMulti(tal1, tal2);
-			System.out.println(returnNumberMulti);
+			System.out.println("Svar: " + returnNumberMulti);
 			break;
 			
 		case 4:
 			double returnNumberDivi = objectB.methodDivi(tal1, tal2);
-			System.out.println(returnNumberDivi);
+			System.out.println("Svar: " + returnNumberDivi);
 			break;
 			
 		case 5:
 			double returnNumberGreatest = objectA.methodReturnsGreatest(tal1, tal2);
-			System.out.println(returnNumberGreatest);
+			System.out.println("Svar: " + returnNumberGreatest);
 			break;
 			
 		case 6:
 			double returnNumberSmallest = objectA.methodReturnsSmallest(tal1, tal2);
-			System.out.println(returnNumberSmallest);
+			System.out.println("Svar: " + returnNumberSmallest);
 			break;
 			
 		case 7:
 			double returnNumberModulo = objectA.methodModulo(tal1, tal2);
-			System.out.println(returnNumberModulo);
+			System.out.println("Svar: " + returnNumberModulo);
 			break;
 			
 		case 8:
 			double returnNumberAbsolute = objectA.methodAbsoluteValue(tal1);
-			System.out.println(returnNumberAbsolute);
+			System.out.println("Svar: " + returnNumberAbsolute);
 			break;
 			
 		case 9:
 			double returnNumberSqrt = objectA.methodSqrt(tal1);
-			System.out.println(returnNumberSqrt);
+			System.out.println("Svar: " + returnNumberSqrt);
 			break;
 			
 		case 10:
 			double returnNumberTimesTwo = objectA.methodTimesTwo(tal1);
-			System.out.println(returnNumberTimesTwo);
-			break;		
+			System.out.println("Svar: " + returnNumberTimesTwo);
+			break;
+			
+		case 11:
+			System.out.println("--------");
+			System.out.println("Hejdå");
+			korProgrammet = false;
+			sc.close();		
 		}
 			
 		}
