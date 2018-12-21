@@ -20,8 +20,19 @@ public class Main {
 				+ "Visa det största av två värden [5]\nVisa det minsta av två värden [6]\n"
 				+ "Modulo [7]\nVisa Absolutvärdet [8]\nKvadratrot [9]\n"
 				+ "Upphöjt till två [10]\nAvsluta programmet [11]\n\nVälj en av siffrorna: ");
+		int val = 0;
 		
-		int val = sc.nextInt();
+		try
+		{
+			val = sc.nextInt();
+		}
+		catch(Exception e)
+		{
+			System.out.println("Välj en SIFFRA");
+			System.out.println("---");
+			sc.nextLine();//Rensar användarens felskrivning
+			continue;
+		}
 		
 		double tal1 = 0;
 		double tal2 = 0;
@@ -30,15 +41,51 @@ public class Main {
 		{
 
 		System.out.print("Skriv in första talet: ");
-		tal1 = sc.nextDouble();		
+		try
+		{	
+			tal1 = sc.nextDouble();
+		}
+		catch(Exception e)
+		{
+			System.out.println("Du skrev inte in ett tal");
+			System.out.println("---");
+			sc.nextLine();
+			continue;
+		}
+				
 		System.out.print("Skriv in andra talet: ");
-		tal2 = sc.nextDouble();
+		try
+		{	
+			tal2 = sc.nextDouble();
+		}
+		catch(Exception e)
+		{
+			System.out.println("Du skrev inte in ett tal");
+			System.out.println("---");
+			sc.nextLine();
+			continue;
+		}
 		
 		}
 		else if(val ==8 || val == 9 || val == 10)
 		{
 			System.out.print("Skriv in talet: ");
-			tal1 = sc.nextDouble();
+			try
+			{	
+				tal1 = sc.nextDouble();
+			}
+			catch(Exception e)
+			{
+				System.out.println("Du skrev inte in ett tal");
+				System.out.println("---");
+				sc.nextLine();
+				continue;
+			}
+		}
+		else
+		{
+			System.out.println("Välj en siffra mellan 1-11");
+			System.out.println("---");
 		}
 		
 		switch(val)
@@ -97,8 +144,7 @@ public class Main {
 		case 11:
 			System.out.println("--------");
 			System.out.println("Hejdå");
-			korProgrammet = false;
-			sc.close();		
+			korProgrammet = false;	
 		}
 			
 		}
